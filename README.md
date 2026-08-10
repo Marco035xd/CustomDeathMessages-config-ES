@@ -51,3 +51,11 @@ Mensaje especial utilizado cuando un jugador es eliminado por un Warden dentro d
 Mensaje personalizado mostrado cuando un jugador recibe daño letal después de caer desde una altura considerable.
 
 <img width="1304" height="95" alt="Muerte provocada por una caída" src="https://github.com/user-attachments/assets/152838ca-11db-4289-90e2-7e8d8aeb8f28" />
+
+## Créditos
+
+Los mensajes mostrados en este proyecto fueron configurados utilizando **CustomDeathMessages (CDM)**.
+
+- [CustomDeathMessages (CDM) - SpigotMC](https://www.spigotmc.org/resources/customdeathmessages-cdm.69605/)
+
+Créditos al autor original del plugin.
