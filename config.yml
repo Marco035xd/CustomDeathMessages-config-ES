@@ -1,0 +1,377 @@
+# Enable Update Messages: habilita los mensajes de actualización
+enable-update-messages: true
+
+# Para usar colores hexadecimales: &#hex
+# PvP Messages: envía un mensaje al asesino y a la víctima cuando un jugador mata a otro.
+# Marcadores de posición (placeholders) para mensajes PvP: %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+enable-pvp-messages: true
+killer-message: '&7[&c☠&7] &eTú mataste a &c%victim%'
+victim-message: '&7[&c☠&7] &eFuiste asesinado por &c%killer%'
+
+# Lightning: efecto de rayo en la ubicación de la muerte.
+enable-lightning: true
+
+# Porcentaje de caída de cabeza: probabilidad de soltar una cabeza, debe ser un número entre 0 y 1. (0 = 0%, 0.5 = 50%, 1 = 100%)
+# Nombre de la cabeza: nombre que tendrá la cabeza cuando se suelte.
+drop-head-percentage: 0.5
+head-name: '&cCabeza de %victim%'
+
+# Enfriamiento de mensajes: tiempo en segundos entre mensajes de muerte para un jugador específico. 0 para desactivar.
+message-cooldown: 0
+
+# Habilitar mensajes globales: muestra los mensajes de muerte a todo el servidor.
+enable-global-messages: true
+
+# Original al pasar el cursor: muestra el mensaje original de muerte de Minecraft al pasar el cursor.
+enable-original-on-hover: false
+
+# Mostrar ítem al pasar el cursor: muestra el ítem usado para matar al jugador al pasar el cursor.
+enable-item-on-hover: true
+
+# Puedes agregar, editar o eliminar cualquiera de los mensajes a continuación.
+# Marcadores de posición para mensajes PvP: %kill-weapon%, %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+global-pvp-death-messages:
+- '&7[&c☠&7] &c%victim% &efue brutalmente asesinado por &c%killer%'
+- '&7[&c☠&7] &c%victim% &efue abatido sin piedad por &c%killer% &eusando &7[&b%kill-weapon%&7]'
+- '&7[&c☠&7] &c%victim% &efue completamente eliminado por &c%killer%'
+- '&7[&c☠&7] &c%victim% &efue masacrado por &c%killer% &eusando &7[&b%kill-weapon%&7]'
+- '&7[&c☠&7] &c%killer% &edestruyó sin piedad a &c%victim% &eusando &7[&b%kill-weapon%&7]'
+- '&7[&c☠&7] &c%victim% &efue totalmente destruido por &c%killer%'
+- '&7[&c☠&7] &c%killer% &ehumilló por completo a &c%victim%'
+- '&7[&c☠&7] &c%victim% &efue aniquilado fácilmente por &c%killer% &eusando &7[&b%kill-weapon%&7]'
+
+# Marcadores de posición para mensajes cuerpo a cuerpo: %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+melee-death-messages:
+- '&7[&c☠&7] &c%victim% &efue abofeteado por &c%killer%'
+- '&7[&c☠&7] &c%victim% &efue noqueado por &c%killer%'
+- '&7[&c☠&7] &c%victim% &efue destrozado por &c%killer%'
+
+# Mensajes para entidades con nombres personalizados: reemplazan el mensaje general de mobs si está habilitado.
+# Marcadores de posición: %victim%, %victim-nick%, %entity-name%, %victim-x%, %victim-y%, %victim-z%
+enable-custom-name-entity-messages: true
+custom-name-entity-messages:
+- '&7[&c☠&7] &c%victim% &efue eliminado por %entity-name%'
+- '&7[&c☠&7] &c%victim% &efue puesto a dormir por %entity-name%'
+- '&7[&c☠&7] &c%entity-name% &ese comió el alma de &c%victim%'
+- '&7[&c☠&7] &c%victim% &edeseó no haber luchado contra %entity-name%'
+
+# Marcadores de posición para TODOS los mensajes siguientes: %victim%, %victim-nick%, %entity-name%, %victim-x%, %victim-y%, %victim-z%
+
+# Mensajes de caída
+fall-damage-messages:
+- '&7[&c☠&7] &c%victim% &creyó que podía volar XD'
+- '&7[&c☠&7] &c%victim% &epensó que una caída no sería tan grave'
+
+# Mensajes de ahogamiento
+drowning-messages:
+- '&7[&c☠&7] &c%victim% &edescubrió que no era un pez'
+- '&7[&c☠&7] &c%victim% &epensó que llegaría al aire a tiempo'
+
+# Mensajes de muerte por asfixia
+suffocation-messages:
+- '&7[&c☠&7] &c%victim% &eno pudo respirar dentro de un bloque'
+- '&7[&c☠&7] &c%victim% &esufrió asfixia atrapado en un bloque'
+
+# Mensajes por acumulación de entidades
+cramming-messages:
+- '&7[&c☠&7] &c%victim% &efue aplastado sin poder respirar'
+- '&7[&c☠&7] &ePobre &c%victim%&e, pensó que podía vivir en un espacio 1x1'
+
+# Mensajes de espinas
+thorns-messages:
+- '&7[&c☠&7] &c%victim% &erecibió el karma de las espinas de &c%killer%'
+- '&7[&c☠&7] &c%victim% &esufrió por las espinas de &c%killer%'
+
+# Muerte por lava
+lava-messages:
+- '&7[&c☠&7] &c%victim% &epensó que el fuego lo haría más fuerte'
+- '&7[&c☠&7] &c%victim% &ecayó en lava... adiós a sus objetos'
+
+# Eliminado por un bloque de magma
+magma-block-messages:
+- '&7[&c☠&7] &c%victim% &efue eliminado por un bloque de magma caliente... &e¿no podías agacharte?'
+- '&7[&c☠&7] &c%victim% &ese quemó los pies en un &6bloque de magma'
+
+elytra-messages:
+- '&7[&c☠&7] &c%victim% &ese estrelló volando con su élytra'
+- '&7[&c☠&7] &c%victim% &ese estampó contra una pared con su élytra'
+
+wither-messages:
+- '&7[&c☠&7] &c%victim% &esufrió la enfermedad del wither'
+- '&7[&c☠&7] &c%victim% &ese desintegró en la cuarta dimensión'
+
+suicide-messages:
+- '&7[&c☠&7] &c%victim% &etuvo un accidente inesperado'
+- '&7[&c☠&7] &c%victim% &eno logró sobrevivir'
+
+fire-messages:
+- '&7[&c☠&7] &c%victim% &ese paró en una hoguera'
+- '&7[&c☠&7] &c%victim% &ejugó con fuego y perdió'
+
+fire-tick-messages:
+- '&7[&c☠&7] &c%victim% &eolvidó detenerse, tirarse y rodar'
+- '&7[&c☠&7] &c%victim% &esiguió ardiendo durante demasiado tiempo'
+
+starvation-messages:
+- '&7[&c☠&7] &c%victim% &eolvidó comer'
+- '&7[&c☠&7] &c%victim% &efue castigado por no cenar en casa'
+
+cactus-messages:
+- '&7[&c☠&7] &c%victim% &efue pinchado hasta morir'
+- '&7[&c☠&7] &c%victim% &eintentó acupuntura... y no sobrevivió'
+- '&7[&c☠&7] &c%victim% &edescubrió que los cactus no eran para abrazarlos'
+
+potion-messages:
+- '&7[&c☠&7] &c%victim% &emurió por magia negra'
+- '&7[&c☠&7] &c%victim% &emurió por una peligrosa poción'
+
+void-messages:
+- '&7[&c☠&7] &c%victim% &epensó que sería divertido visitar el vacío'
+- '&7[&c☠&7] &c%victim% &edescubrió que el vacío no tiene fondo'
+
+lightning-messages:
+- '&7[&c☠&7] &c%victim% &efue golpeado por un rayo'
+- '&7[&c☠&7] &c%victim% &efue castigado por los dioses'
+
+falling-block-messages:
+- '&7[&c☠&7] &c%victim% &efue aplastado por un bloque que cayó'
+- '&7[&c☠&7] &c%victim% &eeligió el peor lugar para quedarse debajo'
+
+freeze-messages:
+- '&7[&c☠&7] &c%victim% &emurió congelado. &b¡Brrrr!'
+- '&7[&c☠&7] &c%victim% &eolvidó su abrigo de invierno'
+
+firework-messages:
+- '&7[&c☠&7] &c%victim% &eencendió un fuego artificial demasiado pronto'
+- '&7[&c☠&7] &c%victim% &eexplotó en mil pedazos'
+- '&7[&c☠&7] &c%victim% &ese lanzó al espacio con un cohete'
+
+slime-messages:
+- '&7[&c☠&7] &c%victim% &efue aplastado por un &aSlime gigante'
+- '&7[&c☠&7] &c%victim% &emurió mientras intentaba conseguir bolas de slime'
+
+zombie-messages:
+- '&7[&c☠&7] &c%victim% &efue devorado por un &aZombie'
+- '&7[&c☠&7] &c%victim% &epensó que un &aZombie &eera amigable'
+
+pigman-messages:
+- '&7[&c☠&7] &c%victim% &eprovocó a los &dPigmen &ey fue devorado vivo'
+- '&7[&c☠&7] &c%victim% &eolvidó que los Pigmen siempre atacan en grupo'
+
+skeleton-messages:
+- '&7[&c☠&7] &c%victim% &efue acribillado por un &fEsqueleto'
+- '&7[&c☠&7] &c%victim% &efue disparado por un &fEsqueleto'
+
+magmacube-messages:
+- '&7[&c☠&7] &c%victim% &efue aplastado por un &cMagma Cube gigante'
+- '&7[&c☠&7] &c%victim% &erebotó directo hacia un &cMagma Cube'
+
+husk-messages:
+- '&7[&c☠&7] &c%victim% &efue devorado por un &eHusk del desierto'
+- '&7[&c☠&7] &c%victim% &eperdió una pelea contra un &eHusk muy reseco'
+
+spider-messages:
+- '&7[&c☠&7] &c%victim% &eenfrentó su peor miedo... &c¡una araña!'
+- '&7[&c☠&7] &c%victim% &eentró en pánico cuando una &cAraña se acercó demasiado'
+
+cavespider-messages:
+- '&7[&c☠&7] &c%victim% &efue mordido hasta morir por una &cAraña de cueva'
+- '&7[&c☠&7] &c%victim% &edescubrió que las arañas de cueva pelean sucio'
+
+witherskeleton-messages:
+- '&7[&c☠&7] &c%victim% &efue destruido por un &fEsqueleto Wither &econ una espada de piedra'
+
+witherboss-messages:
+- '&7[&c☠&7] &c%victim% &eperdió la cabeza contra el Wither'
+- '&7[&c☠&7] &c%victim% &erecibió un proyectil del Wither en la cara'
+
+dragon-messages:
+- '&7[&c☠&7] &c%victim% &efue despedazado por el &dDragón del End'
+- '&7[&c☠&7] &c%victim% &eperdió la cabeza contra el &dDragón del End'
+- '&7[&c☠&7] &c%victim% &eencontró la pantalla de respawn, no el portal del End'
+
+dragon-breath-messages:
+- '&7[&c☠&7] &c%victim% &etomó un baño en el aliento del &dDragón del End'
+- '&7[&c☠&7] &c%victim% &einhaló el horrible aliento del &dDragón del End'
+
+elderguardian-messages:
+- '&7[&c☠&7] &c%victim% &eintentó limpiar un monumento marino, pero el &7Guardián Anciano &edijo que no'
+- '&7[&c☠&7] &c%victim% &efue expulsado del monumento por un &7Guardián Anciano'
+
+tnt-messages:
+- '&7[&c☠&7] &c%victim% &efue volado por &cTNT'
+- '&7[&c☠&7] &c%victim% &eexplotó por &cTNT'
+- '&7[&c☠&7] &e¡BOOM! &c%victim% &eaprendió sobre explosivos de la peor forma'
+
+end-crystal-messages:
+- '&7[&c☠&7] &c%victim% &efue destruido por un &dCristal del End'
+- '&7[&c☠&7] &c%victim% &efue volado por un &dCristal del End'
+
+creeper-messages:
+- '&7[&c☠&7] &c%victim% &efue explotado por un &aCreeper... ¡Awww man!'
+- '&7[&c☠&7] &c%victim% &eno escuchó el siseo detrás suyo'
+
+ghast-messages:
+- '&7[&c☠&7] &c%victim% &efue alcanzado por una bola de fuego de un &fGhast'
+- '&7[&c☠&7] &c%victim% &etuvo un mal día bajo los cielos del Nether'
+
+enderman-messages:
+- '&7[&c☠&7] &c%victim% &emiró a un &dEnderman &ea los ojos'
+- '&7[&c☠&7] &c%victim% &edescubrió que mirar a los ojos a un &dEnderman fue un error'
+
+silverfish-messages:
+- '&7[&c☠&7] &c%victim% &efue devorado por un &7Pez de plata'
+
+witch-messages:
+- '&7[&c☠&7] &c%victim% &emurió a manos de una &dBruja'
+- '&7[&c☠&7] &c%victim% &eprobó la misteriosa poción de una &dBruja'
+
+shulker-messages:
+- '&7[&c☠&7] &c%victim% &emurió intentando conseguir conchas de &dShulker'
+- '&7[&c☠&7] &c%victim% &efue disparado por un &dShulker'
+- '&7[&c☠&7] &eLeviooosa~ &c%victim% &efue eliminado por un &dShulker'
+
+guardian-messages:
+- '&7[&c☠&7] &c%victim% &efue asesinado por un &7Guardián'
+- '&7[&c☠&7] &c%victim% &erecibió el láser de un &7Guardián'
+
+golem-messages:
+- '&7[&c☠&7] &c%victim% &eenfureció a un &7Gólem de hierro &ey fue aplastado'
+
+zombievillager-messages:
+- '&7[&c☠&7] &c%victim% &efue convertido en cena por un &aAldeano Zombi'
+- '&7[&c☠&7] &c%victim% &edescubrió que el aldeano no quería comerciar'
+
+endermite-messages:
+- '&7[&c☠&7] &c%victim% &efue devorado por un &dEndermite'
+- '&7[&c☠&7] &c%victim% &efue rodeado por un diminuto problema morado'
+
+phantom-messages:
+- '&7[&c☠&7] &c%victim% &efue secuestrado por un &3Fantasma'
+- '&7[&c☠&7] &c%victim% &epasó demasiadas noches sin dormir y un &3Fantasma lo encontró'
+
+drowned-messages:
+- '&7[&c☠&7] &c%victim% &efue devorado por un &bAhogado'
+- '&7[&c☠&7] &c%victim% &edescubrió que el agua no era segura esa noche'
+
+pillager-messages:
+- '&7[&c☠&7] &c%victim% &efue disparado por un &7Saqueador'
+- '&7[&c☠&7] &c%victim% &ese cruzó con la ballesta de un &7Saqueador'
+
+ravager-messages:
+- '&7[&c☠&7] &c%victim% &efue embestido por un &7Devastador'
+- '&7[&c☠&7] &c%victim% &eno pudo detener la carga de un &7Devastador'
+
+illusioner-messages:
+- '&7[&c☠&7] &c%victim% &efue enviado al mundo de las ilusiones por un &7Ilusionista'
+- '&7[&c☠&7] &c%victim% &efue engañado por un &7Ilusionista'
+- '&7[&c☠&7] &c%victim% &efue asesinado por un &7Ilusionista'
+
+bee-messages:
+- '&7[&c☠&7] &c%victim% &efue picado hasta morir por una &lAbeja'
+- '&7[&c☠&7] &c%victim% &emolestó a la colmena equivocada'
+
+wolf-messages:
+- '&7[&c☠&7] &c%victim% &efue despedazado por un &fLobo'
+- '&7[&c☠&7] &c%victim% &eprovocó a un &fLobo &ey lo pagó caro'
+
+llama-messages:
+- '&7[&c☠&7] &c%victim% &emurió escupido por una Llama'
+- '&7[&c☠&7] &c%victim% &eno soportó ser escupido por una Llama'
+
+blaze-messages:
+- '&7[&c☠&7] &c%victim% &efue carbonizado por un &6Blaze'
+- '&7[&c☠&7] &c%victim% &efue reducido a cenizas por un &6Blaze'
+
+stray-messages:
+- '&7[&c☠&7] &c%victim% &efue disparado por un &fErrante'
+- '&7[&c☠&7] &c%victim% &erecibió una flecha congelada de un &fErrante'
+
+vex-messages:
+- '&7[&c☠&7] &c%victim% &efue devorado por un pequeño y molesto &fVex'
+- '&7[&c☠&7] &c%victim% &efue atormentado por un &fVex'
+
+vindicator-messages:
+- '&7[&c☠&7] &c%victim% &efue cazado por un &fVindicador'
+- '&7[&c☠&7] &c%victim% &ese encontró con Johnny... un &fVindicador'
+
+evoker-messages:
+- '&7[&c☠&7] &c%victim% &efue enviado al más allá por un &fEvocador'
+- '&7[&c☠&7] &c%victim% &edesafió la ira de un &fEvocador'
+- '&7[&c☠&7] &c%victim% &efue asesinado por un &fEvocador'
+
+pufferfish-messages:
+- '&7[&c☠&7] &c%victim% &emurió por un pez globo'
+- '&7[&c☠&7] &c%victim% &emolestó al pez globo equivocado'
+
+polar-bear-messages:
+- '&7[&c☠&7] &c%victim% &efue asesinado por un &fOso polar &e(en realidad, lo golpeó primero)'
+- '&7[&c☠&7] &c%victim% &efue convertido en nieve por un &fOso polar'
+
+dolphin-messages:
+- '&7[&c☠&7] &c%victim% &eprovocó a un &bDelfín &ey perdió'
+- '&7[&c☠&7] &c%victim% &egolpeó a un &bDelfín &ey fue castigado'
+
+panda-messages:
+- '&7[&c☠&7] &c%victim% &efue convertido en la cena de un &aPanda'
+- '&7[&c☠&7] &c%victim% &eintentó robarle el bambú a un &aPanda'
+
+piglin-messages:
+- '&7[&c☠&7] &c%victim% &eencontró su fin ante un &dPiglin'
+- '&7[&c☠&7] &c%victim% &ehizo enojar a los &dPiglins... les advertimos que no les robes'
+- '&7[&c☠&7] &c%victim% &eechaba de menos a los &dPigmen &ey murió ante un &dPiglin'
+
+hoglin-messages:
+- '&7[&c☠&7] &c%victim% &efue embestido por un &cHoglin'
+- '&7[&c☠&7] &c%victim% &eno leyó las notas del parche sobre los Hoglins'
+
+zoglin-messages:
+- '&7[&c☠&7] &c%victim% &efue empalado por un &cZoglin'
+- '&7[&c☠&7] &c%victim% &efue arrollado por un &cZoglin'
+
+goat-messages:
+- '&7[&c☠&7] &c%victim% &efue embestido por una &fCabra'
+- '&7[&c☠&7] &c%victim% &efue perforado por el cuerno de una &fCabra'
+
+zombified-piglin-messages:
+- '&7[&c☠&7] &c%victim% &ellevó a un Piglin al overworld... y lo pagó caro'
+- '&7[&c☠&7] &c%victim% &emurió por un &dPiglin zombificado'
+
+fox-messages:
+- '&7[&c☠&7] &c%victim% &ese metió con un &6Zorro &ey lo lamentó'
+- '&7[&c☠&7] &c%victim% &efue mordido por un &6Zorro'
+
+warden-messages:
+- '&7[&c☠&7] &c%victim% &efue asesinado por un &8Warden... ¿qué esperabas?'
+- '&7[&c☠&7] &eUn &8Warden &eprotege el Deep Dark de &c%victim%'
+
+warden-sonic-boom-messages:
+- '&7[&c☠&7] &c%victim% &efue aniquilado por un ataque sónico de un &8Warden'
+- '&7[&c☠&7] &c%victim% &eperdió los oídos por un ataque sónico de un &8Warden'
+
+
+# Esto es para cualquier mensaje que no haya sido agregado.  
+# Si mueres por una causa que no tiene mensajes definidos, se mostrará uno de estos en su lugar.  
+# (Por favor, informa cualquier mensaje faltante en mi discusión de Spigot)
+unknown-messages:
+- '&7[&c☠&7] &c%victim% &emurió de la forma más inesperada posible'
+- '&7[&c☠&7] &c%victim% &emurió'
+- '&7[&c☠&7] &c%victim% &efue asesinado'
+
+fireball-messages:
+- '&7[&c☠&7] &c%victim% &efue incinerado por una bola de fuego hasta morir'
+- '&7[&c☠&7] &c%victim% &eno pudo esquivar la bola de fuego'
+
+arrow-messages:
+- '&7[&c☠&7] &c%victim% &equedó como un puercoespín después de recibir tantas flechas'
+- '&7[&c☠&7] &c%victim% &eencontró la punta de una flecha'
+
+breeze-messages:
+- '&7[&c☠&7] &c%victim% &efue lanzado por los aires por un &bBreeze'
+- '&7[&c☠&7] &c%victim% &eno pudo seguirle el ritmo a un &bBreeze'
+
+# Solo está aquí para ayudarme a depurar el plugin, no se recomienda habilitarlo.
+developer-mode: false
+
+# Versión de la configuración, no cambiar.
+config-version: 3
